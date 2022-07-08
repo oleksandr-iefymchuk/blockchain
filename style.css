@@ -3,9 +3,9 @@
     margin: 0;
 }
 body {
-background: #1C1C1C;;
-font-family: 'Russo One', sans-serif;
-color: #ffffff;
+    background: #1C1C1C;;
+    font-family: 'Russo One', sans-serif;
+    color: #ffffff;
 }
 canvas {
     position: fixed;
@@ -13,35 +13,38 @@ canvas {
     top: 0;
     z-index: -1;
 }
-/* .wrapper{
-    width:1366px;
-    border: 1px solid #fc081c;
-    margin: 0 auto;
-    box-sizing: border-box;
-overflow: hidden;
-} */
+.wrapper{
+width:1260px;
+margin: 0 auto;
+box-sizing: border-box;
+}
+
 header{
-    background: url("img/bg-cube.png") left 700px top 169px/ 46%  no-repeat;
-    border: 1px solid #e8fc08;
+    background: url("img/bg-cube.png") left 700px top 0px/ 47%  no-repeat;
+height: 470px;
 }
 header::after {
     content: "";
     background: rgba(10, 14, 30, 0) url("img/ellipse.png") 0% 0%/ 100% no-repeat;
     width: 100%;
-    height: 100%;
-    left: -119px;
-    top: 243px;
+    height:650px;
+    left: -550px;
+    top: 0px;
     position: absolute;
+    z-index: -2;
+    
 }
 header::before {
     content: "";
     background: rgba(10, 14, 30, 0) url("img/bg-lines.png") 0% 42%/ 100% repeat fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
+        position: absolute;
+        width: 100%;
+        height: 810px;
+        left: -1px;
+        top: -162px;
+        mix-blend-mode: overlay;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        
 }
 
 .header-logo{
@@ -49,32 +52,29 @@ header::before {
     top: 22px;
     width: 1366px;
     text-align: center;
-    border: 1px solid #0be23d;
 }
 .header-navbar{
-width: 816px;
-height: 58px; 
-position: fixed;
-top: 22px;
-
-border: 1px solid #ffffff;
-box-sizing: border-box;
-margin-left: 300px;
+    width: 816px;
+    height: 58px; 
+    position: fixed;
+    top: 22px;
+    box-sizing: border-box;
+    margin-left: 300px;
+    z-index: 3;
 }
 
 .header-navbar li{
     display: inline-block;
     text-transform: uppercase;
-    border: 1px solid #0be23d;
     vertical-align: middle; 
     margin-right: 40px;
 }
 .nav-link{
-text-decoration: none;
-color: #ffffff;
-font-size: 20px;
-line-height: 24px;
-position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
 }
 .header-navbar li a::after {
     position: absolute;
@@ -82,11 +82,11 @@ position: relative;
     content: "";
     right: 0;
     width: 0;
-    height: 4px;
+    height: 5px;
     background: linear-gradient(90deg, #9396FA 3.68%, rgba(147, 150, 250, 0) 100%);
     transition: width 0.5s ease;
-    border-radius: 3px;
-filter: blur(1px); 
+    border-radius: 4px;
+    filter: blur(2px); 
 }
 
 .header-navbar li a:hover:after {
@@ -94,11 +94,23 @@ filter: blur(1px);
 }
 
 .header-subtitle{
-width:611px;
-margin-top: 222px;
-margin-left: 97px;
-border: 1px solid #e8fc08;
+    width:611px;
+    margin-top: 185px;
+    margin-left: 97px;
+    
 }
+.header-subtitle::after{
+    content: "";
+    position: absolute;
+    position: absolute;
+    width: 985px;
+    height: 391px;
+    left: 196px;
+    top: 258px;
+    background: url("img/ellipse2.png") 0% 0%/ 100% no-repeat;;
+    z-index: -1;
+}
+
 .header-subtitle h1{
     text-transform: uppercase;
     font-size: 35px;
@@ -107,15 +119,14 @@ border: 1px solid #e8fc08;
 .header-subtitle h1::after {
     position: relative;
     display: inline-block;
- top:-25px;
+    top:-25px;
     content: "";
     left: 0;
     width:100%;
     height: 4px;
     background: linear-gradient(90deg, #9396FA 3.68%, rgba(147, 150, 250, 0) 100%);
     border-radius: 3px;
-    filter: blur(2px);
-    
+    filter: blur(2px);  
 }
 .text-decoration{
     color:#8B8FFF;
@@ -127,46 +138,79 @@ border: 1px solid #e8fc08;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
-    width: 558px;
-    
+    width: 558px; 
 }
 
-.header-buttons{
+.header-button{
+    cursor: pointer;
+    -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 2px 4px 25px 10px rgba(148, 151, 255, 0);
+        box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 2px 4px 25px 10px rgba(148, 151, 255, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 97px;
     margin-top: 33px;
     width: 201px;
     height: 50px;
     text-align: center;
-    background: linear-gradient(90deg, #2D7A76 0%, #9497FF 54%, #2D7975 100%);
+    background: linear-gradient(90deg, #2D7A76 20%, #9497FF 60%, #2D7975 100%);
     position: relative;
-    clip-path: polygon(0% 36%,
-                /* верхняя левая */
-                13% 0%,
-                /* верхняя левая */
-                100% 0%,
-                /* верхняя правая */
-                100% 0%,
-                /* верхняя правая */
-                100% 65%,
-                /* нижняя правая */
-                87.5% 100%,
-                /* нижняя правая */
-                0% 100%,
-                /* нижняя левая */
-                0% 100%
-                /* нижняя левая */
-            );
+    clip-path: polygon(/* верхняя левая */0% 30%,8% 0%, /* верхняя правая */100% 0%,100% 0%,/* нижняя правая */100% 70%,92% 100%, /* нижняя левая */0% 100%,0% 100%);
+    background-size: 300% 100%;
+    transition: 0.7s;
+    z-index: 2;
 }
 
-
-/* .header-scroll{
-    margin-top: 134px;
-    margin-bottom: 46px;
-} */
-.scroll{
+.header-button:hover {
+    background-position: 100%;
+}
+.header-button a{
     color: #ffffff;
+    text-decoration: none;
+}
+.header-scroll{
+    position: relative;
+    text-align: center;
+    top: -50px;
+    height: 110px;
+        margin-bottom: 0px;
+        z-index: 1;
+}
+.scroll{
+    filter: invert(1);
+    animation: scroll-down 0.7s ease-in-out infinite alternate both;
+}
+
+@keyframes scroll-down {
+    0% {
+        padding-top: 4%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .technology{
-    height: 1018px;
+height: 1018px;
+
+}
+.technology h2{
+    margin: 50px auto 0 auto;
+    width: 808px;
+    height: 86px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #FFFFFF;
+   
+}
+.designing{
+
 }
