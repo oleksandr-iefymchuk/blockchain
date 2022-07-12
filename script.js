@@ -1,3 +1,44 @@
+//slider
+
+const sliderLine = document.querySelector(".slider-line");
+const sliderBlock = document.querySelectorAll(".border");
+
+let count = 0;
+let width;
+
+function init() {
+  width = document.querySelector(".slider").offsetWidth / 3;
+  sliderLine.style.width = width * sliderBlock.length + "px";
+  sliderBlock.forEach((item) => {
+    item.style.width = width + "px";
+    item.style.height = "auto";
+  });
+  rollSlide();
+}
+init();
+window.addEventListener("resize", init);
+
+document.querySelector(".button-slider-prev").addEventListener("click", function () {
+  count--;
+  if (count < 0) {
+    count = sliderBlock.length - 3;
+  }
+  rollSlide();
+});
+document.querySelector(".button-slider-next").addEventListener("click", function () {
+  count++;
+  if (count >= sliderBlock.length - 2) {
+    count = 0;
+  }
+  rollSlide();
+});
+
+function rollSlide() {
+  sliderLine.style.transform = "translate(-" + count * width + "px)";
+}
+
+//canvas lines
+
 (function () {
   const canvas = document.querySelector("canvas");
   const ctx = canvas.getContext("2d");
