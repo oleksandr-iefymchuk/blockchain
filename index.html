@@ -271,55 +271,96 @@
           <div class="form">
             <form action="#" id="form" class="form-bode">
               <div class="container-name-email">
-                <div class="form-item">
+                <div class="form-wrapper">
                   <input id="formName" type="text" name="name" class="form-input" placeholder="*Full name" required />
                 </div>
 
-                <div class="form-item">
+                <div class="form-wrapper">
                   <input id="formEmail" type="text" name="email" class="form-input" placeholder="*E-mail" required />
                 </div>
               </div>
+
               <div class="container-phone-company">
-                <div class="form-item">
+                <div class="form-wrapper">
                   <input id="formPhone" type="text" name="phone" class="form-input" placeholder="*Phone" required />
                 </div>
 
-                <div class="form-item">
+                <div class="form-wrapper">
                   <input id="formCompany" type="text" name="company" class="form-input" placeholder="Company" />
                 </div>
               </div>
-              <div class="form-item">
-                <textarea name="message" id="formMessage" class="form-input" placeholder="Your message"></textarea>
-                <p class="protect">This website is protected by reCAPTCHA and <a href="#">the Google Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+
+              <div class="form-wrapper-textarea">
+                <textarea name="message" id="formMessage" class="form-input-textarea" placeholder="Your message"></textarea>
               </div>
 
-              <div class="form-item">
-                <div class="form-label">
-                  <div class="file">
-                    <div class="file-item">
-                      <input id="formDocument" accept=" .doc, .docx, .pdf, .jpeg, .png, .gif" type="file" name="document" class="file-input" />
-                      <div class="file-button"><img src="img/teem/upload-file.png" alt="" /></div>
-                    </div>
-                    <div class="file-preview"></div>
-                  </div>
+              <p class="protect">This website is protected by reCAPTCHA and <a href="#">the Google Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+
+              <div class="file">
+                <div class="file-item">
+                  <input id="form-document" accept=" .doc, .docx, .pdf, .jpeg, .png, .gif" type="file" name="document" class="file-input" />
+                  <div class="file-button"><img src="img/teem/upload-file.png" alt="" /></div>
                 </div>
+                <div class="file-preview"></div>
               </div>
 
               <button type="submit" class="form-button">Get in touch</button>
+              <button class="telegram">
+                <div class="telegram-wrapper">
+                  <a href="#">Texting on Telegram</a>
+                </div>
+              </button>
             </form>
-            <div class="telegram">
-              <a href="#">Texting on Telegram</a>
-            </div>
           </div>
+
           <div class="light-ellipse">
-            <img class="top-ligt-ellipse" src="" alt="" />
-            <p>Learn how to apply blockchain</p>
-            <p>Get a free 60-minute consultation</p>
-            <img class="top-ligt-ellipse" src="" alt="" />
+            <img class="top-ligt-ellipse" src="img/teem/light-ellipse.png" alt="" />
+            <p class="learn">Learn how to apply blockchain</p>
+            <p class="consultation">Get a free 60-minute consultation</p>
+            <img class="bottom-ligt-ellipse" src="" alt="" />
           </div>
         </div>
       </section>
-      <footer></footer>
+
+      <footer>
+        <div class="footer-block">
+          <div class="code code-css">
+            <pre><code>
+  <p class="line-1 anim-items anim-no-hide">&lt;html&gt;</p> 
+  <p class="line-2 anim-items anim-no-hide">&lt;head&gt;</p> 
+  <p class="line-3 anim-items anim-no-hide">&lt;title&gt; <span class="code-decoration">Aila Lab</span> &lt;title&gt;</p>
+  <p class="line-4 anim-items anim-no-hide">&lt;style&gt;</p>
+      <p class="line-5 anim-items anim-no-hide">developer  {</p>
+         <p class="line-6 anim-items anim-no-hide"><span class="code-decoration">tel: +1 646 204 44 60</span></p>
+         <p class="line-7 anim-items anim-no-hide"><span class="code-decoration">e-mail: hello@ailalab.com</span></p>
+         <p class="line-8 anim-items anim-no-hide"><span class="code-decoration">website: www.ailalab.com</span></p>
+         <p class="line-9 anim-items anim-no-hide"><span class="code-decoration">telegram: t.me/sanekny</span></p>
+         <p class="line-10 anim-items anim-no-hide">}</p>
+         <p class="line-11 anim-items anim-no-hide">&lt;/head&gt;</p>
+         <p class="line-12 anim-items anim-no-hide">&lt;/html&gt;</p>
+          </code></pre>
+          </div>
+
+          <div class="footer-nav-bar">
+            <ul>
+              <li><a class="footer-list" href="#">Technology</a></li>
+              <li><a class="footer-list" href="#">Cases</a></li>
+              <li><a class="footer-list" href="#">Our approach</a></li>
+              <li><a class="footer-list" href="#">Need a team?</a></li>
+              <li><a class="footer-list" href="#">news</a></li>
+            </ul>
+          </div>
+
+          <div class="privacy-policy">
+            <div class="footer-logo"><img class="logo" src="img/logo.png" alt="" /></div>
+            <ul>
+              <li><a class="footer-list" href="#">Terms of Service</a></li>
+              <li><a class="footer-list" href="#">Privacy Policy</a></li>
+              <li><a class="footer-list" href="#">Cookies Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>

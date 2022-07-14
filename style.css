@@ -268,6 +268,9 @@ header {
         transition: 0.7s;
         z-index: 2;   
 }
+.form-button{
+    margin:0 auto;
+}
 
 .header-button:hover, .form-button:hover {
     background-position: 100%;
@@ -888,22 +891,42 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
         font-weight: 400;
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 45px;
 }
 
 .content-need-team{
     display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        background:
+                url("img/teem/ellipse4.png") 0% 28%/28% no-repeat;
 }
 .form {
     width: 50%;
-    border: 1px solid #9497FF;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 
 .light-ellipse {
+    position: relative;
+    background:
+    url("img/teem/animation.png") 50% 10%/60% no-repeat,url("img/teem/light.png") 46% 10%/62% no-repeat;
     min-width: 43%;
-    border: 1px solid #71f406;
+}
+.learn{
+    position:absolute;
+    top: 27%;
+    left: 18%;
+    font-size: 24px;
+    line-height: 29px;
+}
+.consultation{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+        top: 37%;
+        left: 12%;
+        font-size: 36px;
+        line-height: 43px;
 }
 
 .container-name-email,
@@ -912,10 +935,22 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    border: 1px solid #94ffbd;
 }
-.form-item {
+.form-wrapper {
     margin: 10px auto;
+    border: 1px solid;
+        border-image: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
+        background: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%);
+        clip-path: polygon(
+                /* верхняя левая */
+                0% 30%, 8% 0%,
+                /* верхняя правая */
+                100% 0%, 100% 0%,
+                /* нижняя правая */
+                100% 70%, 92% 100%,
+                /* нижняя левая */
+                0% 100%, 0% 100%);
+    
 }
 
 .form-input {
@@ -927,17 +962,57 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     width: 270px;
     height: 40px;
     background: #1C1C1C;
-    border: 2px solid;
+    border: 1px solid;
     border-image: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
     color: #8B8FFF;
+    clip-path: polygon(
+                /* верхняя левая */
+                0% 30%, 8% 0%,
+                /* верхняя правая */
+                100% 0%, 100% 0%,
+                /* нижняя правая */
+                100% 70%, 92% 100%,
+                /* нижняя левая */
+                0% 100%, 0% 100%);
+}
+
+
+.form-wrapper-textarea {
+width: 610px;
+    margin: 10px auto;
+    border: 2px solid;
+    border-image: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
+    background: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%);
+    clip-path: polygon(0% 33%, 9% 0%, 100% 0%, 100% 61%, 90% 97%, 0% 97.5%);
+        background-color: #1C1C1C;
+
+}
+.form-input-textarea {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 25px;
+    background: #1C1C1C;
+    border: 1px solid;
+    border-image: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
+    color: #8B8FFF;
+ clip-path: polygon(0% 35%, 9% 0%, 100% 0%, 100% 61%, 90% 99%, 0% 99%);
+}
+textarea.form-input-textarea {
+width: 558.5px;
+    min-height: 60px;
+    resize: vertical;
+    padding: 25px;
+    padding-top: 40px;
+   
 }
 
 .file-item{
     position: relative;
-    top: -130px;
-    left: 88%;
+    top: -145px;
+    left: 86%;
     width: 5%;
-    border: 1px solid #8B8FFF;
 }
 .file-input{
     position:absolute;
@@ -950,14 +1025,6 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     cursor: pointer;
 }
 
-textarea.form-input {
-    width: 89%;
-    min-height: 90px;
-    resize: vertical;
-    padding: 25px;
-    margin-left: 8px;
-    margin-bottom: 20px;
-}
 
 ::-webkit-input-placeholder {
     /* WebKit browsers */
@@ -990,35 +1057,66 @@ color:#ffffff;
     font-size: 16px;
     line-height: 22px;
     width: 79%;
+    margin-bottom: 30px;
 }
 
 .form-button{
     margin-top: 0;
+    margin-left: 10px;
+    margin-right: 170px;
+    top: -35px;
+   
 }
 
 .telegram {
-    margin-left: 97px;
-    margin-top: 33px;
+    margin-left: 9px;
+    top: -36px;
     cursor: pointer;
-    border: 2px solid;
-    border-image: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
     font-family: 'Inter',
         sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 229px;
-    height: 50px;
+    height: 48px;
     text-align: center;
     position: relative;
     background-size: 300% 100%;
     transition: 0.7s;
     z-index: 2;
+    border: 1px solid;
+    border-image: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
+    background: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%);
+        clip-path: polygon(
+                    /* верхняя левая */
+                    0% 30%, 8% 0%,
+                    /* верхняя правая */
+                    100% 0%, 100% 0%,
+                    /* нижняя правая */
+                    100% 70%, 92% 100%,
+                    /* нижняя левая */
+                    0% 100%, 0% 100%);
+      
 
 }
+.telegram-wrapper{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+   width:100%;
+   height:100%;
+        background:  #1C1C1C;
+        clip-path: polygon(
+                    /* верхняя левая */
+                    0% 30%, 8% 0%,
+                    /* верхняя правая */
+                    100% 0%, 100% 0%,
+                    /* нижняя правая */
+                    100% 70%, 92% 100%,
+                    /* нижняя левая */
+                    0% 100%, 0% 100%);
+}
+
 
 .telegram:hover {
     background-position: 100%;
@@ -1027,5 +1125,276 @@ color:#ffffff;
 .telegram a {
     color: #ffffff;
     text-decoration: none;
+    
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
+    -webkit-text-fill-color: #9497FF;
+    -webkit-box-shadow: 0 0 0px 1000px #1C1C1C inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+img.top-ligt-ellipse {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    font-family: 'Inter', sans-serif;
+    margin-top: 50px;
+        background: url("img/bg-lines.png") 0% 50%/ 100% no-repeat rgba(45, 121, 117, 0.8);
+}
+.footer-block{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    background:rgba(28, 28, 28, 0.6);
+    width:100%;
+}
+.code {
+    color:#ffffff;
+    margin-right: 6%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+        line-height: 22px;
+        width: 30%;
+}
+.code-decoration{
+   color: rgba(148, 151, 255, 1);
+}
+.footer-nav-bar{
+    margin-right: 8%;
+    margin-bottom: 27px;
+}
+
+.footer-nav-bar li{
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-nav-bar a{
+    text-decoration: none;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        transition: all ease 0.4s
+}
+.footer-nav-bar a:hover, .privacy-policy a:hover{
+    color:#8B8FFF;
+}
+.privacy-policy{
+    margin-right: 3%;
+    text-align: right;
+    width: 40%;
+}
+.privacy-policy li{
+    display: inline-block;
+        text-align: center;
+        list-style-type: none;
+}
+.privacy-policy li:nth-child(2), .privacy-policy li:nth-child(1){
+    margin-right:7%;
+}
+.privacy-policy a{
+font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    transition: all ease 0.4s
+}
+.footer-list{
+color: #ffffff;
+}
+
+.footer-logo{
+    margin-top: 10px;
+    margin-bottom: 190px;
+    text-align: right;
+}
+
+.code-css code .line-1,
+.code-css code .line-2,
+.code-css code .line-3,
+.code-css code .line-4,
+.code-css code .line-5,
+.code-css code .line-6,
+.code-css code .line-7,
+.code-css code .line-8,
+.code-css code .line-9,
+.code-css code .line-10,
+.code-css code .line-11,
+.code-css code .line-12 {
+    width: 0%;
+    margin: 0;
+    border-right: 0.15em solid transparent;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+
+.line-1.activ {
+    animation: typing-1 1s 0s steps(10, end) forwards, cursor 1s linear 0s 1;
+}
+
+.line-2.activ {
+    animation: typing-2 1s 1s steps(10, end) forwards, cursor 2s linear 1s 1;
+}
+
+.line-3.activ {
+    animation: typing-7 2s 3s steps(20, end) forwards, cursor 2s linear 3s 1;
+}
+
+.line-4.activ {
+    animation: typing-4 1s 4s steps(10, end) forwards, cursor 2s linear 4s 1;
+}
+
+.line-5.activ {
+    animation: typing-5 1s 5s steps(10, end) forwards, cursor 2s linear 5s 1;
+}
+.line-6.activ {
+    animation: typing-6 2s 6s steps(20, end) forwards, cursor 3s linear 6s 1;
+}
+.line-7.activ {
+    animation: typing-7 2s 8s steps(20, end) forwards, cursor 3s linear 8s 1;
+}
+
+.line-8.activ {
+    animation: typing-7 2s 10s steps(20, end) forwards, cursor 3s linear 10s 1;
+}
+.line-9.activ {
+    animation: typing-7 2s 12s steps(20, end) forwards, cursor 3s linear 12s 1;
+}
+.line-10.activ {
+    animation: typing-10 1s 14s steps(5, end) forwards, cursor 2s linear 14s 1;
+}
+.line-11.activ {
+    animation: typing-5 1s 15s steps(10, end) forwards, cursor 2s linear 15s 1;
+}
+
+.line-12.activ {
+    border-color: transparent;
+    animation: typing-3 1s 16s steps(10, end) forwards, cursor-persist 1s linear 16s infinite;
+}
+
+
+
+@keyframes typing-1 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 60px;
+    }
+}
+
+@keyframes typing-2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 60px;
+    }
+}
+
+@keyframes typing-3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70px;
+    }
+}
+
+@keyframes typing-4 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70px;
+    }
+}
+
+@keyframes typing-5 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 110px;
+    }
+}
+
+@keyframes typing-6 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 230px;
+    }
+}
+
+@keyframes typing-7 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 250px;
+    }
+}
+@keyframes typing-10 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20px;
+    }
+}
+
+@keyframes cursor {
+
+    from,
+    to,
+    20%,
+    80% {
+        border-color: transparent;
+    }
+
+    25%,
+    75% {
+        border-color: white;
+    }
+}
+
+@keyframes cursor-persist {
+
+    from,
+    45% {
+        border-color: transparent;
+    }
+
+    50%,
+    to {
+        border-color: white;
+    }
+}
