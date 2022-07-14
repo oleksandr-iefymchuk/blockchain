@@ -37,6 +37,43 @@ function rollSlide() {
   sliderLine.style.transform = "translate(-" + count * width + "px)";
 }
 
+//arrow at the bottom
+const arrowBot = document.querySelector(".arrow");
+console.log(arrowBot);
+function appearArrow() {
+  if (window.scrollY > 1300) {
+    arrowBot.classList.add("arrow-show");
+  } else {
+    arrowBot.classList.remove("arrow-show");
+  }
+}
+
+function backToTop() {
+  if (window.scrollY > 0) {
+    window.scrollBy(0, -80);
+    setTimeout(backToTop, 10);
+  }
+}
+
+window.addEventListener("scroll", appearArrow);
+arrowBot.addEventListener("click", backToTop);
+
+// archor
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute("href").substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
 // canvas lines
 
 (function () {
