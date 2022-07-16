@@ -9,7 +9,9 @@ body {
     color: #ffffff;
    
 }
-
+body._lock {
+    overflow: hidden;
+}
 canvas {
     position:absolute;
     left: 0;
@@ -31,6 +33,122 @@ header {
         url("img/ellipse.png") 0% 10%/ 90% no-repeat;
     height: 470px;
     padding-bottom: 13%;
+}
+
+.top-form-wrapper{
+z-index: -5;
+opacity: 0;
+}
+.top-form-wrapper._activ{
+    position: fixed;
+    padding: 5px 0px 0px 0px;
+    top: 0;
+        width: 100%;
+        height: 100%;
+            background-color: rgb(0, 0, 0, 0.9);
+    z-index: 7;
+-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.top-form{
+    padding:20px;
+    border-radius: 40px;
+    position: relative;
+    top: 50%;
+        transform: translate(0, -50%);
+margin: 0 auto;
+width: 60%;
+border:1px solid #8B8FFF;
+background: #1C1C1C url("img/top-form/top-form-ellipse.png") 0 0/ 100% no-repeat;
+}
+
+.close-icon {
+    cursor: pointer;
+    display: block;
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 5px;
+    right: 3%;
+    z-index: 8;
+}
+
+.close-icon span,
+.close-icon::before,
+.close-icon::after {
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(139, 143, 255) 50%, rgb(255, 255, 255) 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    width: 70%;
+    height: 5%;
+    left: 0;
+    transition: all 0.5s;
+    margin-left: 7px;
+}
+
+.close-icon::before,
+.close-icon::after {
+    content: "";
+}
+
+.close-icon::before {
+    top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.close-icon::after {
+bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+}
+
+.close-icon span {
+    top: 50%;
+    transform: scale(0) translate(0px, -50%);
+}
+
+.close-icon:hover span,
+.close-icon:hover:before,
+.close-icon:hover:after {
+    background-position: 0%;
+    color: rgb(255, 255, 255);
 }
 
 .cube-top-left {

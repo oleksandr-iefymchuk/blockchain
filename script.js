@@ -1,3 +1,29 @@
+"use strict";
+
+// open top form
+const headerButton = document.querySelector(".header-button");
+const topForm = document.querySelector(".top-form-wrapper");
+const closeIcon = document.querySelector(".close-icon");
+
+function openTopForm() {
+  setTimeout(() => {
+    topForm.classList.toggle("_activ");
+    document.body.classList.toggle("_lock");
+  }, 300);
+}
+
+function closeTopForm() {
+  if (topForm.classList.contains("_activ")) {
+    setTimeout(() => {
+      topForm.classList.remove("_activ");
+      document.body.classList.remove("_lock");
+    }, 500);
+  }
+}
+
+headerButton.addEventListener("click", openTopForm);
+closeIcon.addEventListener("click", closeTopForm);
+
 //slider
 
 const sliderLine = document.querySelector(".slider-line");
@@ -37,9 +63,8 @@ function rollSlide() {
   sliderLine.style.transform = "translate(-" + count * width + "px)";
 }
 
-//arrow at the bottom
+//arrow back to top
 const arrowBot = document.querySelector(".arrow");
-console.log(arrowBot);
 function appearArrow() {
   if (window.scrollY > 1300) {
     arrowBot.classList.add("arrow-show");
@@ -72,6 +97,40 @@ for (let anchor of anchors) {
       block: "start",
     });
   });
+}
+
+// animation on scroll
+const animItems = document.querySelectorAll(".anim-items");
+if (animItems.length > 0) {
+  window.addEventListener("scroll", animScroll);
+  function animScroll() {
+    for (let i = 0; i < animItems.length; i++) {
+      const animItem = animItems[i];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 5;
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+      if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) {
+        animItem.classList.add("activ");
+      } else {
+        if (!animItem.classList.contains("anim-no-hide")) {
+          animItem.classList.remove("activ");
+        }
+      }
+    }
+  }
+
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+  }
+  // setTimeout(() => { animScroll(); }, 300);
 }
 
 // canvas lines
@@ -177,37 +236,3 @@ for (let anchor of anchors) {
 
   init();
 })();
-
-// animation on scroll
-const animItems = document.querySelectorAll(".anim-items");
-if (animItems.length > 0) {
-  window.addEventListener("scroll", animScroll);
-  function animScroll() {
-    for (let i = 0; i < animItems.length; i++) {
-      const animItem = animItems[i];
-      const animItemHeight = animItem.offsetHeight;
-      const animItemOffset = offset(animItem).top;
-      const animStart = 5;
-
-      let animItemPoint = window.innerHeight - animItemHeight / animStart;
-      if (animItemHeight > window.innerHeight) {
-        animItemPoint = window.innerHeight - window.innerHeight / animStart;
-      }
-      if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) {
-        animItem.classList.add("activ");
-      } else {
-        if (!animItem.classList.contains("anim-no-hide")) {
-          animItem.classList.remove("activ");
-        }
-      }
-    }
-  }
-
-  function offset(el) {
-    const rect = el.getBoundingClientRect(),
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
-  }
-  // setTimeout(() => { animScroll(); }, 300);
-}
