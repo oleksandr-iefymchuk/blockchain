@@ -208,7 +208,7 @@ header {
 }
 
 .top-form-button{
-    margin: 0 0 0 7px;
+    margin: 0 0 10px 15px;
 }
 
 
@@ -1067,7 +1067,7 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     color: #8B8FFF;
 }
 
-.form-input-textarea {
+.form-input-textarea, .top-form-input-textarea {
     margin-left: 13px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -1081,6 +1081,10 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     min-height: 60px;
     resize: vertical;
     padding: 25px;
+}
+.form-input-textarea{
+    margin-left: 8px;
+    width: 88.6%;
 }
 
 .file-item {
@@ -1134,11 +1138,11 @@ color:#ffffff;
     line-height: 22px;
     width: 79%;
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 .top-protect{
-    margin-top: 15px;
     margin-bottom: 0;
-    margin-left: 1%;
+    margin-left: 2.3%;
     text-align: left;
 }
 .form-button{
