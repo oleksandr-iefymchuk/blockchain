@@ -134,7 +134,6 @@ if (animItems.length > 0) {
 }
 
 // canvas lines
-
 (function () {
   const canvas = document.querySelector("canvas");
   const ctx = canvas.getContext("2d");

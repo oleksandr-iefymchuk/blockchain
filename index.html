@@ -50,46 +50,35 @@
 
           <div class="top-form-wrapper">
             <div class="top-form">
+              <h2><span class="text-decoration">Need a team?</span></h2>
               <div class="close-icon">
                 <span></span>
               </div>
-              <form action="#" id="form" class="form-bode">
-                <div class="container-name-email">
-                  <div class="form-wrapper">
-                    <input id="formName" type="text" name="name" class="form-input" placeholder="*Full name" required />
+              <div class="top-form-body">
+                <form action="mail.php" method="POST" class="form-body" id="top-form" enctype="multipart/form-data">
+                  <div class="container-name-email">
+                    <input type="text" name="name" class="form-input" id="top-form-name" placeholder="*Full name" required />
+                    <input type="text" name="email" class="form-input" id="top-form-email" placeholder="*E-mail" required />
                   </div>
 
-                  <div class="form-wrapper">
-                    <input id="formEmail" type="text" name="email" class="form-input" placeholder="*E-mail" required />
+                  <div class="container-phone-company">
+                    <input type="text" name="phone" class="form-input" id="top-form-phone" placeholder="*Phone" required />
+                    <input type="text" name="company" class="form-input" id="top-form-company" placeholder="Company" />
                   </div>
-                </div>
+                  <textarea name="message" class="form-input-textarea" id="top-form-message" placeholder="Your message"></textarea>
+                  <p class="top-protect">This website is protected by reCAPTCHA and <a href="#">the Google Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
 
-                <div class="container-phone-company">
-                  <div class="form-wrapper">
-                    <input id="formPhone" type="text" name="phone" class="form-input" placeholder="*Phone" required />
+                  <div class="file">
+                    <div class="top-file-item">
+                      <input type="file" name="upload" class="file-input" id="top-form-upload" />
+                      <div class="file-button"><img src="img/teem/upload-file.png" alt="" /></div>
+                    </div>
+                    <div class="file-preview"></div>
                   </div>
 
-                  <div class="form-wrapper">
-                    <input id="formCompany" type="text" name="company" class="form-input" placeholder="Company" />
-                  </div>
-                </div>
-
-                <div class="form-wrapper-textarea">
-                  <textarea name="message" id="formMessage" class="form-input-textarea" placeholder="Your message"></textarea>
-                </div>
-
-                <p class="protect">This website is protected by reCAPTCHA and <a href="#">the Google Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
-
-                <div class="file">
-                  <div class="file-item">
-                    <input id="form-document" accept=" .doc, .docx, .pdf, .jpeg, .png, .gif" type="file" name="document" class="file-input" />
-                    <div class="file-button"><img src="img/teem/upload-file.png" alt="" /></div>
-                  </div>
-                  <div class="file-preview"></div>
-                </div>
-
-                <button type="submit" class="form-button">Get in touch</button>
-              </form>
+                  <button type="submit" class="top-form-button">Get in touch</button>
+                </form>
+              </div>
             </div>
           </div>
         </header>
@@ -315,41 +304,26 @@
           <p class="discuss">Let's discuss your project!</p>
           <div class="content-need-team">
             <div class="form">
-              <form action="#" id="form" class="form-bode">
+              <form class="form-body" id="form-body" action="mail.php" method="POST" enctype="multipart/form-data">
                 <div class="container-name-email">
-                  <div class="form-wrapper">
-                    <input id="formName" type="text" name="name" class="form-input" placeholder="*Full name" required />
-                  </div>
-
-                  <div class="form-wrapper">
-                    <input id="formEmail" type="text" name="email" class="form-input" placeholder="*E-mail" required />
-                  </div>
+                  <input type="text" name="name" class="form-input" id="form-name" placeholder="*Full name" required />
+                  <input type="text" name="email" class="form-input" id="form-email" placeholder="*E-mail" required />
                 </div>
 
                 <div class="container-phone-company">
-                  <div class="form-wrapper">
-                    <input id="formPhone" type="text" name="phone" class="form-input" placeholder="*Phone" required />
-                  </div>
-
-                  <div class="form-wrapper">
-                    <input id="formCompany" type="text" name="company" class="form-input" placeholder="Company" />
-                  </div>
+                  <input type="text" name="phone" class="form-input" id="form-phone" placeholder="*Phone" required />
+                  <input type="text" name="company" class="form-input" id="form-company" placeholder="Company" />
                 </div>
-
-                <div class="form-wrapper-textarea">
-                  <textarea name="message" id="formMessage" class="form-input-textarea" placeholder="Your message"></textarea>
-                </div>
-
+                <textarea name="message" class="form-input-textarea" id="form-message" placeholder="Your message"></textarea>
                 <p class="protect">This website is protected by reCAPTCHA and <a href="#">the Google Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
 
                 <div class="file">
                   <div class="file-item">
-                    <input id="form-document" accept=" .doc, .docx, .pdf, .jpeg, .png, .gif" type="file" name="document" class="file-input" />
+                    <input type="file" name="upload" class="file-input" id="form-upload" />
                     <div class="file-button"><img src="img/teem/upload-file.png" alt="" /></div>
                   </div>
-                  <div class="file-preview"></div>
+                  <!-- <div id="form-preview" class="file-preview"></div> -->
                 </div>
-
                 <button type="submit" class="form-button">Get in touch</button>
                 <button class="telegram">
                   <div class="telegram-wrapper">
