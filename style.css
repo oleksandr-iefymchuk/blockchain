@@ -7,6 +7,7 @@ body {
     background: rgba(0, 0, 0, 0.9);
     font-family: 'Russo One', sans-serif;
     color: #ffffff;
+    
    
 }
 body._lock {
@@ -27,28 +28,32 @@ canvas {
 }
 
 header {
-    background: url("img/bg-cube.png") left 105% top 100%/ 47% no-repeat,
-        url("img/ellipse2.png") 0% 30%/ 150% no-repeat,
+       background:  url("img/ellipse2.png") 0% 30%/ 150% no-repeat,
         url("img/bg-lines.png") 0% 42%/ 100% no-repeat,
         url("img/ellipse.png") 0% 10%/ 90% no-repeat;
     height: 470px;
     padding-bottom: 13%;
 }
 
-
+.main-cube{
+top:30%;    
+width: 44%;
+position: absolute;
+left: 56%;
+}
 .cube-top-left {
     width: 5%;
     position:absolute;
-    top:21%;
-    left:63%;
+    top:26%;
+    left:62.7%;
     animation: move-cube 1.4s ease infinite alternate both;
    
 }
 .cube-top-right {
     width: 5%;
     position: absolute;
-    top: 37%;
-    left: 92%;
+    top: 38%;
+    left: 89.8%;
     animation: move-cube 1.5s ease infinite alternate both;
 }
 
@@ -62,15 +67,15 @@ header {
 .cube-middle-right{
     width: 5%;
     position: absolute;
-    top: 65%;
-    left: 92.5%;
+    top: 69%;
+    left: 90.5%;
     animation: move-cube 1.4s ease infinite alternate both;
 }
 .cube-bottom {
     width: 5%;
     position: absolute;
-    top: 80%;
-    left: 75%;
+    top: 78.3%;
+    left: 73.6%;
     animation: move-cube 1.5s ease infinite alternate both;
 }
 @keyframes move-cube {
@@ -83,32 +88,52 @@ header {
     }
 }
 
+.top-logo{
+    text-align: center;
+    position: relative;
+        top: 3%;
+        right: 2%;
+}
+
 
 .header-navbar {
+    position: relative;
     text-align: center;
-    width:70%;
+    width:80%;
     box-sizing: border-box;
     margin: 0% auto 9% auto;
-    z-index: 3;
-    padding-top: 1%;
+    z-index: 3; 
+    top: -5%;
 }
 
-.header-navbar li {
+#nav-technology, #nav-cases, #nav-approach,#nav-team {
+    position: absolute;
+    margin: 0% 3% 0% 3%;
     display: inline-block;
-    text-transform: uppercase;
-    vertical-align: middle;
-    width: 19%;
-}
-
-.nav-link {
+        text-transform: uppercase;
+        vertical-align: middle;
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
     line-height: 24px;
     position: relative;
+    
+}
+#nav-technology{
+margin-left: 8%;
+}
+#nav-cases{
+    margin-right: 7%;
+}
+#nav-approach{
+    margin-left: 10%;
 }
 
-.header-navbar li a::after {
+
+#nav-technology::after,
+#nav-cases::after,
+#nav-approach::after,
+#nav-team::after {
     position: absolute;
     bottom: -10px;
     content: "";
@@ -121,7 +146,10 @@ header {
     filter: blur(2px);
 }
 
-.header-navbar li a:hover:after {
+#nav-technology:hover:after,
+#nav-cases:hover:after,
+#nav-approach:hover:after,
+#nav-team:hover:after {
     width: 100%;
 }
 
@@ -135,7 +163,9 @@ header {
     font-size: 35px;
     font-weight: 400;
 }
-
+.header-subtitle h1 br,.header-subtitle p br{
+    display:none;
+}
 .header-subtitle h1::after {
     position: relative;
     display: inline-block;
@@ -148,7 +178,6 @@ header {
     border-radius: 3px;
     filter: blur(2px);
 }
-
 
 .text-decoration {
     color: #8B8FFF;
@@ -291,7 +320,7 @@ color: #ffffff;
 
 .designing {
     cursor: pointer;
-    width: 297px;
+    width: 280px;
     height: 270px;
     box-shadow: 3px 4px 23px 12px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -310,7 +339,7 @@ color: #ffffff;
 
 .using-platforms {
     cursor: pointer;
-    width: 297px;
+    width: 280px;
     height: 350px;
     box-shadow: 3px 4px 23px 12px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -322,7 +351,7 @@ color: #ffffff;
 
 .development {
     cursor: pointer;
-    width: 297px;
+    width: 280px;
     height: 270px;
     background: url("img/technology/ellipse-left.png") bottom right/100% no-repeat,
         url("img/technology/ellipse-right.png") top right no-repeat #1C1C1C;
@@ -334,7 +363,7 @@ color: #ffffff;
 
 .use-of-methodologies {
     cursor: pointer;
-    width: 297px;
+    width: 280px;
     height: 270px;
     box-shadow: 3px 4px 23px 12px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -370,17 +399,17 @@ color: #ffffff;
     border: 2px solid;
     border-image: linear-gradient(45deg, rgba(148, 151, 255, 0) 1.73%, #9497FF 53.89%, rgba(148, 151, 255, 0) 98.96%) 1 1 100%;
 }
-.left-expertise-list{
+.left-expertise-list {
     margin-right: 170px;
     margin-left: 99px;
     margin-top: 28px;
     padding-left: 36px;
     padding-bottom: 25px;
     font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 38px;
-    background:url("img/technology/left-expertise.png") 0% 21%/ 7% no-repeat
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    background: url("img/technology/left-expertise.png") 0% 21%/ 7% no-repeat
 }
 .right-expertise-list {
     margin-right: 50px;
@@ -510,23 +539,23 @@ background: url("img/bg-lines-cases.png") 0% 8%/ 100% 100% no-repeat;
 }
 
 .financial-analytics-img{
-    background: url("img/cases/financial-analytics-img.png")
+    background: url("img/cases/financial-analytics-img.png") 0% 0%/ 100% no-repeat;
 }
 
 .crm-img{
-background: url("img/cases/crm-img.png")
+background: url("img/cases/crm-img.png") 0% 0%/ 100% no-repeat;
 }
 
 .cryptocurrency-exchange-img{
-background: url("img/cases/cryptocurrency-exchange-img.png")
+background: url("img/cases/cryptocurrency-exchange-img.png") 0% 0%/ 100% no-repeat;
 }
 
 .business-card-img{
-background: url("img/cases/business-card-img.png")
+background: url("img/cases/business-card-img.png") 0% 0%/ 100% no-repeat;
 }
 
 .crypto-betting-img{
-background: url("img/cases/crypto-betting-img.png")
+background: url("img/cases/crypto-betting-img.png") 0% 0%/ 100% no-repeat;
 }
 
 .financial-analytics-text,
@@ -582,7 +611,7 @@ margin-bottom: 17px;
 
 .architecture, .design, .audit,.optimization {
     cursor: pointer;
-    width: 297px;
+    width: 285px;
     height: 230px;
     background: url("img/technology/ellipse-left.png") bottom right/100% no-repeat,
         url("img/technology/ellipse-right.png") top right no-repeat #1C1C1C;
@@ -603,7 +632,7 @@ margin-bottom: 17px;
 }
 .approach-img {
     position: relative;
-    left: 70%;
+    left: 67%;
     top: -70px;
 }
 .architecture p,
@@ -840,11 +869,10 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
        
 }
 
-
 .light-ellipse {
     position: relative;
     background:
-    url("img/teem/animation.png") 50% 10%/60% no-repeat,url("img/teem/light.png") 47% 10%/60% no-repeat;
+    url("img/teem/animation.png") 50% 75%/70% no-repeat,url("img/teem/light.png") 47% 10%/60% no-repeat;
     min-width: 43%;
     padding-bottom: 60px;
 }
@@ -855,14 +883,14 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     font-size: 24px;
     line-height: 29px;
 }
-.consultation{
+.consultation {
     text-align: center;
     width: 80%;
     position: absolute;
-        top: 37%;
-        left: 12%;
-        font-size: 36px;
-        line-height: 43px;
+    top: 37%;
+    left: 12%;
+    font-size: 36px;
+    line-height: 43px;
 }
 
 .container-name-email,
@@ -978,8 +1006,6 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     filter: blur(2px);
 }
 
-
-
 .top-file-item {
     position: relative;
     top: -120px;
@@ -987,7 +1013,6 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     width: 5%;
     transform: rotate(-54deg)
 }
-
 
 .close-icon {
     cursor: pointer;
@@ -1549,5 +1574,436 @@ color: #ffffff;
     transform: translate(0, -50%);
     background: #1C1C1C url("img/top-form/top-form-ellipse.png") 0 0/ 105% no-repeat;
 }
-       
 
+@media screen and (max-width: 1100px) {}
+@media screen and (max-width: 800px) {
+    body._lock {
+            overflow: hidden;
+        }
+header {
+    background: url("img/ellipse2.png") 100% 100%/ 150% no-repeat,
+        url("img/bg-lines.png") 60% 42%/ 200% no-repeat,
+        url("img/img-mobile/ellipse-top.png") 0% 0%/ 100% no-repeat;
+        padding-bottom: 70%;
+}
+canvas{
+    display:none;
+}
+    
+        .top-logo {
+            position: inherit;
+            text-align: left;
+            padding: 4% 0% 4% 6%;
+        }
+                .logo {
+                    width: 53px;
+                    height: 48px;
+                }
+    
+        .header-navbar {
+            text-align: center;
+            font-size: 1.1rem;
+            padding: 5px 0px 0px 0px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 28, 28,0.98) url("img/img-mobile/ellipse-top-burger.png") 0% 20%/ 100% no-repeat;
+            z-index: 7;
+            overflow: auto;
+            right: -100%;
+            transition: all 1s ease 0s;
+        }
+        .header-navbar._activ {
+            right: 0;
+        }
+    
+        #nav-technology,
+        #nav-cases,
+        #nav-approach,
+        #nav-team {
+            display: table;
+            margin:8% auto;
+            font-size: 24px;
+            top: 50px;
+            padding-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+            display: block;
+            width: 45px;
+            height: 38px;
+            position: fixed;
+            top: 25px;
+            right: 2%;
+            z-index: 8;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+                .menu-icon span,
+                .menu-icon::before,
+                .menu-icon::after {
+                    position: absolute;
+                    background-image: linear-gradient(to right, #9497FF 50%, rgb(255, 255, 255) 50%);
+                    background-size: 200% 100%;
+                    background-position: 100%;
+                    width: 70%;
+                    height: 5%;
+                    left: 0;
+                    transition: all 0.5s;
+                    margin-left: 7px;
+                }
+        
+                .menu-icon::before,
+                .menu-icon::after {
+                    content: "";
+                }
+        
+                .menu-icon::before {
+                    top: 25%;
+                    transition: all 0.3s;
+                }
+        
+                .menu-icon::after {
+                    bottom: 25%;
+                    transition: all 0.7s;
+                }
+        
+                .menu-icon span {
+                    top: 50%;
+                    transform: scale(1) translate(0px, -50%);
+                }
+        
+                .menu-icon:hover span,
+                .menu-icon:hover:before,
+                .menu-icon:hover:after {
+                    background-position: 0%;
+                    color: rgb(255, 255, 255);
+                }
+        
+                .menu-icon._activ span {
+                    transform: scale(0);
+                }
+        
+                .menu-icon._activ::before {
+                    transition: all 0.5s;
+                    top: 50%;
+                    transform: rotate(-45deg) translate(0px, -50%);
+                }
+        
+                .menu-icon._activ::after {
+                    transition: all 0.5s;
+                    bottom: 50%;
+                    transform: rotate(45deg) translate(0px, 50%);
+                }
+        
+                .header-navbar.transparent {
+                    background: linear-gradient(to right, #222 100%, rgb(155, 211, 217) 0%);
+                }
+
+
+.header-subtitle {
+    width:79%;
+   
+    margin-left: 6%;
+}
+
+.header-subtitle h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+}
+.header-subtitle h1::after {
+    width: 70%;
+}
+.header-subtitle h1 br,.header-subtitle p br {
+    display: initial;
+}
+.header-subtitle p{
+    font-size: 16px;
+    line-height: 19px;
+}
+.header-button{
+margin-top: 10px;
+margin-left: 6%;
+
+}
+.header-button,
+.form-button,
+.top-form-button{
+width: 180px;
+    height: 45px;
+}
+.header-scroll {
+    display:none;
+}
+.img-wrapp{
+    position: absolute;
+    width: 70%;
+    height:80%;
+    overflow: hidden;
+    top:85%;
+    left:30%;
+}
+.main-cube {
+   top:0;
+    width:150%;
+    position: absolute;
+    left: 10%;
+}
+.cube-top-left {
+    width: 9.5%;
+    top: 87.5%;
+    left: 54.2%;
+}
+.cube-middle-left {
+    width: 9.5%;
+    top: 113%;
+    left: 39.4%;
+}
+.cube-bottom {
+    width: 9.5%;
+    top: 134%;
+    left: 80%;
+}
+.cube-top-right, .cube-middle-right{
+    display:none;
+}
+.technology h2 br{
+    display:none;
+}
+.technology h2{
+    width: 330px;
+    font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+}
+.designing, .using-platforms, .development{
+    margin:20px auto;
+}
+
+.use-of-methodologies{
+    margin: 20px auto 0px auto;
+}
+
+.expertize {
+    margin-top: 30px;
+}
+
+.expertise-list {
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.expertise-list p{
+    margin-left: 10px;
+}
+.left-expertise-list {
+    
+    margin:0 auto;
+    width:270px;
+    font-size: 16px;
+    line-height: 30px;
+    background: url("img/technology/left-expertise.png") 5% 21%/ 6% no-repeat
+}
+        
+.right-expertise-list {
+    margin: 0 auto;
+    width: 270px;
+    font-size: 16px;
+    line-height: 30px;
+    background: url("img/technology/right-expertise.png") 5% 21%/ 6% no-repeat
+}
+
+.invite-text{
+    font-size: 16px;
+    line-height: 19px;
+    width: 360px;
+}
+
+.cases {
+    margin-top: 70px;
+}
+
+.cases-wrapper {
+    background: url("img/bg-lines-cases.png") 0% 8%/ 170% 100% no-repeat;
+}
+
+.cases h2 {
+    font-size: 26px;
+    line-height: 29px;
+}
+
+
+.financial-analytics-img,
+.crm-img,
+.cryptocurrency-exchange-img,
+.business-card-img,
+.crypto-betting-img{
+    margin:30px auto;
+    width:345px;
+    height: 200px;
+}
+.crm-text,.business-card-text{
+    order:2;
+}
+.crm-img, .business-card-img{
+    order:1;
+}
+
+.financial-analytics-text,
+.crm-text,
+.cryptocurrency-exchange-text,
+.business-card-text,
+.crypto-betting-text{
+    margin:0 auto;
+    width: 345px;;
+}
+.cases-button-left,
+.cases-button-right{
+    width: 180px;
+        height: 45px;
+    margin-bottom:25px;
+}
+.develop-approach h2{
+        padding-top: 70px;
+        padding-bottom: 35px;
+        font-size: 24px;
+        line-height: 29px;
+}
+
+.architecture,
+.design,
+.audit,
+.optimization{
+    margin: 18px auto;
+}
+
+.about-us h2{
+    margin-top: 70px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.border{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.button-slider-next{
+    left: 85%;
+}
+.need-team h2{
+margin-top: 40px;
+
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.discuss{
+    margin-bottom: 25px;
+}
+
+.learn {
+    left: 6%;
+    top: 25%;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.consultation{
+width: 100%;
+left: 0%;
+top: 32%;
+font-size: 32px;
+    line-height: 38px;
+}
+
+    .form{
+    order:2;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.need-team {
+    background: none;
+
+}
+.light-ellipse{
+    order:1;
+    background:
+            url("img/teem/animation.png") 50% 120%/100% no-repeat, url("img/teem/light.png") 47% 10%/90% no-repeat;
+    
+}
+
+.form-input{
+    margin: 7px auto;
+    width: 300px;
+}
+.form-input-textarea{
+    margin: 7px auto;
+    width: 81%;
+}
+.file-item{
+    top: -190px;
+}
+
+.protect{
+    width: 308px;
+    margin-bottom: 20px;
+}
+
+.form-button{
+margin-bottom: 20px;
+margin-left: 0px;
+}
+.telegram{
+    margin-left: 0px;
+    width: 200px;
+        height: 45px;
+}
+.footer-block{
+    display: block;
+}
+.code{
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.footer-nav-bar, .privacy-policy{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.footer-nav-bar{
+    margin: 27px auto;
+}
+.footer-logo{
+    order: 2;
+    margin:0;
+    position: relative;
+    left:50%;
+}
+.privacy-policy ul{
+    order:1;
+    
+}
+.privacy-policy{ 
+    width: 60%;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+.privacy-policy li{
+margin-bottom: 15px;
+display: block;
+text-align: left;
+}
+.privacy-policy li:nth-child(2),
+.privacy-policy li:nth-child(1){
+    margin-right: 0%;
+}
+
+
+}

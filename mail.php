@@ -10,8 +10,8 @@ $mail->CharSet = 'UTF-8';
 $mail->setLanguage('en','phpmailer/language');
 $mail->isHTML(true);
 
-$mail->setFrom('website2811@gmail.com'); // от кого будет уходить письмо?
-$mail->addAddress('audit2811@gmail.com');     // Кому будет уходить письмо 
+$mail->setFrom('sanekny@gmail.com'); // от кого будет уходить письмо?
+$mail->addAddress('Hello@ailalab.com');     // Кому будет уходить письмо 
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -32,7 +32,7 @@ if(!empty($_FILES['upload']['tmp_name'])){
 }
 
 $mail->Subject = 'Hello! This is a letter from the blockchain website';
-$mail->Body    = '' .'Name: ' .$name  .'Phone: ' .$phone .'E-mail: ' .$email  .'Company: ' .$company  .'Message: ' .$message;
+$mail->Body    = '' .'Name: ' .$name  .'<br>Phone: ' .$phone .'<br>E-mail: ' .$email  .'<br>Company: ' .$company  .'<br>Message: ' .$message;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
