@@ -226,6 +226,7 @@ margin-left: 8%;
     transition: 0.7s;
     z-index: 2;
 }
+
 .header-button:hover,
 .form-button:hover,
 .top-form-button:hover {
@@ -237,7 +238,7 @@ margin-left: 8%;
 }
 
 .top-form-button{
-    margin: 0 0 10px 15px;
+    margin:0 0 10px 0;
 }
 
 
@@ -897,8 +898,10 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
 .container-phone-company {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin:0;
+    padding:0;
 }
 
 .top-form-wrapper {
@@ -955,8 +958,9 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
 }
 
 .top-form-body {
+    margin:0 auto;
     height: 95%;
-    width: 100%;
+    width: 96%;
     text-align: left;
 }
 
@@ -983,6 +987,7 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
 }
 
 .top-form h2 {
+    margin-left: 1.5%;
     margin-bottom: 30px;
     text-align: left;
     text-transform: uppercase;
@@ -1074,11 +1079,14 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
 }
 
 .form-body{
+    width: 99%;
     position: relative;
+    overflow: hidden;
+    
 }
 
 .form-input {
-    margin: 10px 8px;
+    margin: 0px 0px 15px 0px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1093,7 +1101,9 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
 }
 
 .form-input-textarea, .top-form-input-textarea {
-    margin-left: 13px;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1102,14 +1112,10 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
     border: 2px solid;
     border-image: linear-gradient(92.64deg, #2D7A76 -0.55%, #9497FF 42.3%, #2D7975 79.33%) 1;
     color: #8B8FFF;
-    width: 87.5%;
-    min-height: 60px;
+    min-width: 100%;
+    min-height: 120px;
     resize: vertical;
     padding: 25px;
-}
-.form-input-textarea{
-    margin-left: 8px;
-    width: 88.6%;
 }
 
 .file-item {
@@ -1156,23 +1162,20 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
 color:#ffffff;
 }
 .protect, .top-protect {
-    margin-left: 1.5%;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    width: 79%;
+    width: 75%;
     margin-bottom: 30px;
     margin-top: 15px;
 }
 .top-protect{
     margin-bottom: 0;
-    margin-left: 2.3%;
     text-align: left;
 }
 .form-button{
     margin-top: 0;
-    margin-left: 10px;
     margin-right: 170px;
     top: -35px;
 }
@@ -1196,8 +1199,8 @@ color:#ffffff;
 
 }
 
-.telegram {
-    margin-left: 9px;
+.telegram { 
+    float: right;
     top: -36px;
     cursor: pointer;
     font-family: 'Inter',
@@ -1207,7 +1210,6 @@ color:#ffffff;
     font-weight: 400;
     width: 229px;
     height: 48px;
-    text-align: center;
     position: relative;
     z-index: 2;
     border: 1.5px solid;
@@ -1938,6 +1940,10 @@ font-size: 32px;
     width: 300px;
     margin: 7px auto;
 }
+.form-body{
+    margin:0 auto;
+    width: 90%;
+}
 
 .need-team {
     background: none;
@@ -1980,18 +1986,17 @@ z-index: 999;
 }
 
 .form-input{
-    margin: 7px auto;
     width: 300px;
 }
 .form-input-textarea{
-    margin: 7px auto;
     width: 86%;
     padding:10px 0 0 25px;
+    min-height: 80px;
 }
 .top-form-input-textarea{
     width: 84%;
-    margin-left: 15px;
     padding: 10px 0 0 25px;
+    min-height: 80px;
 }
 
 .file-item{
@@ -2008,17 +2013,21 @@ z-index: 999;
     margin-bottom: 20px;
 }
 .top-protect{
-    margin-left: 15px;
+width: 308px;
 }
 
 .form-button{
 margin-bottom: 20px;
 margin-left: 0px;
 }
+.top-form-button{
+    margin:0;
+}
 .telegram{
     margin-left: 0px;
     width: 200px;
         height: 45px;
+        float: left;
 }
 .footer-block{
     display: block;
