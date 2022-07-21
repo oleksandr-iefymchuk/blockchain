@@ -1175,7 +1175,6 @@ color:#ffffff;
     margin-left: 10px;
     margin-right: 170px;
     top: -35px;
-   
 }
 
 .telegram-wrapper {
@@ -1235,7 +1234,6 @@ color:#ffffff;
     transition: all ease 0.4s;
 
 }
-
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -1586,9 +1584,9 @@ header {
         url("img/img-mobile/ellipse-top.png") 0% 0%/ 100% no-repeat;
         padding-bottom: 70%;
 }
-canvas{
+/* canvas{
     display:none;
-}
+} */
     
         .top-logo {
             position: inherit;
@@ -1609,7 +1607,7 @@ canvas{
             width: 100%;
             height: 100%;
             background: rgba(28, 28, 28,0.98) url("img/img-mobile/ellipse-top-burger.png") 0% 20%/ 100% no-repeat;
-            z-index: 7;
+            z-index: 4;
             overflow: auto;
             right: -100%;
             transition: all 1s ease 0s;
@@ -1638,7 +1636,7 @@ canvas{
             position: fixed;
             top: 25px;
             right: 2%;
-            z-index: 8;
+            z-index: 6;
             background-color: rgba(0, 0, 0, 0);
         }
         
@@ -1744,7 +1742,7 @@ width: 180px;
     width: 70%;
     height:80%;
     overflow: hidden;
-    top:85%;
+    top:67%;
     left:30%;
 }
 .main-cube {
@@ -1755,17 +1753,17 @@ width: 180px;
 }
 .cube-top-left {
     width: 9.5%;
-    top: 87.5%;
+    top: 69%;
     left: 54.2%;
 }
 .cube-middle-left {
     width: 9.5%;
-    top: 113%;
+    top: 82.7%;
     left: 39.4%;
 }
 .cube-bottom {
     width: 9.5%;
-    top: 134%;
+    top: 94.6%;
     left: 80%;
 }
 .cube-top-right, .cube-middle-right{
@@ -1889,11 +1887,25 @@ width: 180px;
 }
 
 .border{
+    width: 250px;
+    height:290px;
     margin-right: 1%;
     margin-left: 1%;
 }
+.archi-develop{
+        margin-left: 20px;
+            margin-right: 15px;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            height: 204px;
+            width: 230px;
+}
+.archi-develop p{
+    margin-bottom: 30px;
+}
+
 .button-slider-next{
-    left: 85%;
+    left: 83%;
 }
 .need-team h2{
 margin-top: 40px;
@@ -1923,8 +1935,8 @@ font-size: 32px;
 
     .form{
     order:2;
-    width: 70%;
-    margin: 0 auto;
+    width: 300px;
+    margin: 7px auto;
 }
 
 .need-team {
@@ -1937,22 +1949,64 @@ font-size: 32px;
             url("img/teem/animation.png") 50% 120%/100% no-repeat, url("img/teem/light.png") 47% 10%/90% no-repeat;
     
 }
+.top-form-body{
+    height:100%;
+    
+}
+.top-form{
+    border-radius: 0;
+    width: 100%;
+    height:100%;
+    top: 0;
+        transform: translate(0, 0);
+        padding:0;
+        background: #1C1C1C url("img/img-mobile/ellipse-top.png") 0 0/ 100% no-repeat;
+  
+}
+.close-icon{
+z-index: 999;
+}
+.top-form h2 {
+    width:100%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+    font-size: 26px;
+    line-height: 18px;
+    margin-bottom: 0px
+}
+.top-form h2:after{
+    left: -192px;
+}
 
 .form-input{
     margin: 7px auto;
     width: 300px;
 }
-.form-input-textarea{
+.form-input-textarea,.top-form-input-textarea {
     margin: 7px auto;
-    width: 81%;
+    width: 84.5%;
+    padding:10px 0 0 25px;
 }
+.top-form-input-textarea{
+    margin-left: 12px;
+}
+
 .file-item{
-    top: -190px;
+    top: -160px;
+    left: 88%;
+}
+.top-file-item{
+    top: -140px;
+        left: 88%;
 }
 
 .protect{
     width: 308px;
     margin-bottom: 20px;
+}
+.top-protect{
+    margin-left: 15px;
 }
 
 .form-button{
@@ -1968,9 +2022,18 @@ margin-left: 0px;
     display: block;
 }
 .code{
-    margin-left: 5px;
+    margin-left: 0px;
+    margin-right: 5px;
     margin-bottom: 0;
+    font-size: 17px;
 }
+
+footer {
+    
+    background: url("img/img-mobile/mobile-footer-lines.png") 0% 0%/ 100% no-repeat rgba(45, 121, 117, 0.8);
+}
+
+
 .footer-nav-bar, .privacy-policy{
     display: flex;
         align-items: center;
@@ -1978,7 +2041,7 @@ margin-left: 0px;
 }
 
 .footer-nav-bar{
-    margin: 27px auto;
+    margin: 0px auto 27px auto;
 }
 .footer-logo{
     order: 2;
@@ -2004,6 +2067,12 @@ text-align: left;
 .privacy-policy li:nth-child(1){
     margin-right: 0%;
 }
-
+.arrow{
+    right: 6%;
+}
+.arrow span{
+    width: 20px;
+        height: 20px;
+}
 
 }
