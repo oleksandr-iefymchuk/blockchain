@@ -1742,7 +1742,7 @@ width: 180px;
     width: 70%;
     height:80%;
     overflow: hidden;
-    top:67%;
+    top:70%;
     left:30%;
 }
 .main-cube {
@@ -1753,17 +1753,17 @@ width: 180px;
 }
 .cube-top-left {
     width: 9.5%;
-    top: 69%;
+    top: 72%;
     left: 54.2%;
 }
 .cube-middle-left {
     width: 9.5%;
-    top: 82.7%;
+    top: 85.8%;
     left: 39.4%;
 }
 .cube-bottom {
     width: 9.5%;
-    top: 94.6%;
+    top: 99%;
     left: 80%;
 }
 .cube-top-right, .cube-middle-right{
@@ -1983,13 +1983,15 @@ z-index: 999;
     margin: 7px auto;
     width: 300px;
 }
-.form-input-textarea,.top-form-input-textarea {
+.form-input-textarea{
     margin: 7px auto;
-    width: 84.5%;
+    width: 86%;
     padding:10px 0 0 25px;
 }
 .top-form-input-textarea{
-    margin-left: 12px;
+    width: 84%;
+    margin-left: 15px;
+    padding: 10px 0 0 25px;
 }
 
 .file-item{
