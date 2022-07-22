@@ -423,6 +423,7 @@ color: #ffffff;
     background: url("img/technology/right-expertise.png") 0% 21%/ 7% no-repeat
 }
 .invite-text {
+    padding-bottom: 40px;
     text-align: center;
     width: 682px;
     margin: 20px auto 0 auto;
@@ -432,7 +433,7 @@ color: #ffffff;
     line-height: 24px;
 }
 .cases{
-   margin-top: 80px; 
+   margin-top: 50px; 
 }
 
 .cases-wrapper{
@@ -1176,7 +1177,7 @@ color:#ffffff;
 }
 .form-button{
     margin-top: 0;
-    margin-right: 170px;
+    margin-right: 2%;
     top: -35px;
 }
 
@@ -1575,8 +1576,8 @@ color: #ffffff;
     background: #1C1C1C url("img/top-form/top-form-ellipse.png") 0 0/ 105% no-repeat;
 }
 
-@media screen and (max-width: 1100px) {}
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 700px) {
     body._lock {
             overflow: hidden;
         }
@@ -1771,6 +1772,10 @@ width: 180px;
 .cube-top-right, .cube-middle-right{
     display:none;
 }
+
+.technology {
+    background: url("img/bg-technology.png") 0% 100%/ 150% no-repeat, url("img/ellipse3.png") 0% 80%/ 120% no-repeat;
+}
 .technology h2 br{
     display:none;
 }
@@ -1822,10 +1827,11 @@ width: 180px;
     font-size: 16px;
     line-height: 19px;
     width: 360px;
+    padding-bottom: 30px;
 }
 
 .cases {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .cases-wrapper {
@@ -1836,7 +1842,6 @@ width: 180px;
     font-size: 26px;
     line-height: 29px;
 }
-
 
 .financial-analytics-img,
 .crm-img,
@@ -1860,7 +1865,7 @@ width: 180px;
 .business-card-text,
 .crypto-betting-text{
     margin:0 auto;
-    width: 345px;;
+    width: 345px;
 }
 .cases-button-left,
 .cases-button-right{
@@ -2086,5 +2091,160 @@ text-align: left;
     width: 20px;
         height: 20px;
 }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .header-navbar {
+            width: 95%;
+        }
+.header-subtitle {
+    margin-left: 6%;
+}
+.header-button{
+    margin-left: 6%;
+}
+
+.img-wrapp {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    overflow: hidden;
+    top: 28%;
+    left: 50%;
+}
+.main-cube {
+    top: 0;
+        width: 140%;
+        position: absolute;
+        left: 10%;
+}
+.cube-top-left {
+    width: 6%;
+    top: 32%;
+    left: 66.7%;
+}
+.cube-top-right, .cube-middle-right{
+    display:none;
+}
+.cube-middle-left {
+    width: 6%;
+    top: 55.3%;
+    left: 56.9%;
+}
+
+.cube-bottom {
+    width: 6%;
+    top: 76.4%;
+    left: 84%;
+}
+.designing,.using-platforms, .development,.use-of-methodologies{
+    margin-left:3%;
+margin-right: 3%;
+width: 290px;
+    height: 280px;
+}
+.using-platforms{
+    width: 290px;
+        height: 360px;
+        margin-bottom:3%;
+}
+.left-expertise-list, .right-expertise-list{
+    margin: 20px auto 0 auto;
+        width: 320px;
+}
+
+.financial-analytics-img,
+.crm-img,
+.cryptocurrency-exchange-img,
+.business-card-img,
+.crypto-betting-img{
+width: 380px;
+    height: 225px;
+}
+.crm-img,
+.business-card-img {
+    margin-right: 50px;
+}
+
+.financial-analytics-text,
+.cryptocurrency-exchange-text,
+.crypto-betting-text {
+    margin-left: 70px;
+}
+
+.crm-text,
+.business-card-text {
+    margin-left: 60px;
+    margin-right: 40px;
+}
+.financial-analytics-text,.crm-text,.business-card-text {
+    margin-top: 38px;
+}
+.cryptocurrency-exchange-text {
+    margin-top: 35px;
+}
+.crypto-betting-text{
+    margin-top: 25px;
+}
+.approach{
+    margin:0 auto;
+    width:90%;
+}
+.architecture,
+.design,
+.audit,
+.optimization{
+    width: 295px;
+        height: 240px;
+        margin: 20px;
+}
+.light-ellipse {
+    background:
+        url("img/teem/animation.png") 50% 75%/85% no-repeat, url("img/teem/light.png") 47% 10%/60% no-repeat;
+}
+.learn {
+    left: 9%;
+    font-size: 24px;
+    width: 100%;
+}
+.consultation {
+    width: 90%;
+    left: 6%;
+}
+.form-input{
+    width: 40%;
+}
+.form-button {
+    margin-top: 0;
+    margin-right: 2%;
+    top: -35px;
+}
+.code {
+    margin-right: 2%;
+    font-size: 16px;
+    line-height: 20px;
+}
+.footer-nav-bar {
+    margin-right: 3%;
+}
+.privacy-policy {
+    margin-right: 2%;
+    width: 44%;
+}
+.privacy-policy li:nth-child(2),
+.privacy-policy li:nth-child(1) {
+    margin-right: 3%;
+}
+ .privacy-policy a {
+     font-size: 16px;
+}
+.top-form {
+    left: 0%;
+    margin: 0 auto;
+    width: 50%;
+    background: #1C1C1C url("img/top-form/top-form-ellipse.png") 0 0/ 105% no-repeat;
+}
+
 
 }

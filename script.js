@@ -26,47 +26,49 @@ closeIcon.addEventListener("click", closeTopForm);
 
 //slider
 
-const sliderLine = document.querySelector(".slider-line");
-const sliderBlock = document.querySelectorAll(".border");
+// const sliderLine = document.querySelector(".slider-line");
+// const sliderBlock = document.querySelectorAll(".border");
 
-let count = 0;
-let width;
-let w = document.body.clientWidth;
+// let count = 0;
+// let width;
+// let w = document.body.clientWidth;
 
-function init() {
-  if (w < 800) {
-    width = document.querySelector(".slider").offsetWidth;
-  } else {
-    width = document.querySelector(".slider").offsetWidth / 3;
-  }
-  sliderLine.style.width = width * sliderBlock.length + "px";
-  sliderBlock.forEach((item) => {
-    item.style.width = width + "px";
-    item.style.height = "auto";
-  });
-  rollSlide();
-}
-init();
-window.addEventListener("resize", init);
+// function init() {
+//   if (w < 800) {
+//     width = document.querySelector(".slider").offsetWidth;
+//   } else if (w < 1100) {
+//     width = document.querySelector(".slider").offsetWidth / 2;
+//   } else {
+//     width = document.querySelector(".slider").offsetWidth / 3;
+//   }
+//   sliderLine.style.width = width * sliderBlock.length + "px";
+//   sliderBlock.forEach((item) => {
+//     item.style.width = width + "px";
+//     item.style.height = "auto";
+//   });
+//   rollSlide();
+// }
+// init();
+// window.addEventListener("resize", init);
 
-document.querySelector(".button-slider-prev").addEventListener("click", function () {
-  count--;
-  if (count < 0) {
-    count = sliderBlock.length - 3;
-  }
-  rollSlide();
-});
-document.querySelector(".button-slider-next").addEventListener("click", function () {
-  count++;
-  if (count >= sliderBlock.length - 2) {
-    count = 0;
-  }
-  rollSlide();
-});
+// document.querySelector(".button-slider-prev").addEventListener("click", function () {
+//   count--;
+//   if (count < 0) {
+//     count = sliderBlock.length - 3;
+//   }
+//   rollSlide();
+// });
+// document.querySelector(".button-slider-next").addEventListener("click", function () {
+//   count++;
+//   if (count >= sliderBlock.length - 2) {
+//     count = 0;
+//   }
+//   rollSlide();
+// });
 
-function rollSlide() {
-  sliderLine.style.transform = "translate(-" + count * width + "px)";
-}
+// function rollSlide() {
+//   sliderLine.style.transform = "translate(-" + count * width + "px)";
+// }
 
 //arrow back to top
 const arrowBot = document.querySelector(".arrow");
