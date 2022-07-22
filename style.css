@@ -850,8 +850,7 @@ background: url("img/about-us/border.png") 0% 8%/ 100% 100% no-repeat;
 .need-team h2{
     margin-top: 60px;
     letter-spacing: 1.5px;
-        text-align: center;
-        
+        text-align: center;      
         font-size: 30px;
         line-height: 43px;
         font-weight: 400;
@@ -1398,7 +1397,6 @@ color: #ffffff;
 }
 
 
-
 @keyframes typing-1 {
     from {
         width: 0;
@@ -1578,7 +1576,7 @@ color: #ffffff;
 
 
 
-@media screen and (max-width: 1100px) and (min-width: 601px) {
+@media screen and (max-width: 1100px) and (min-width: 801px) {
     .header-navbar {
             width: 95%;
         }
@@ -1729,6 +1727,354 @@ width: 380px;
     width: 62%;
     background: #1C1C1C url("img/top-form/top-form-ellipse.png") 0 0/ 105% no-repeat;
 }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    
+    header{
+        padding-bottom: 0%;
+        height: 400px;
+    }
+    .header-navbar {
+        width: 100%;
+        margin: 0% auto 4% auto;
+    }
+        #nav-technology,
+        #nav-cases,
+        #nav-approach,
+        #nav-team{
+            font-size: 18px;
+            margin: 0% 2% 0% 2%;
+        }
+        #nav-technology {
+            margin-left: 5%;
+        }
+    
+        #nav-cases {
+            margin-right: 7%;
+        }
+    
+        #nav-approach {
+            margin-left: 5%;
+        }
+                #nav-team{
+                margin-right: 1%;
+                }
+.top-logo {
+    right: 5%;
+}
+
+.header-scroll {
+    height: 0px;
+}
+.header-subtitle {
+    width: 400px;
+    margin-left: 3%;
+}
+.header-subtitle h1 {
+    font-size: 24px;
+}
+.header-subtitle p{
+    top: -20px;
+}
+.header-subtitle p{
+font-size: 16px;
+line-height: 16px;
+width: 330px;
+}
+
+.header-button,
+.form-button,
+.top-form-button, .cases-button-left,
+.cases-button-right{
+    width: 160px;
+        height: 40px;
+}
+
+.protect,
+.top-protect{
+    width: 95%;
+}
+.telegram{
+    width: 200px;
+        height: 45px;
+}
+
+.header-button{
+    margin-top: 0px;
+    margin-left: 3%;
+}
+.designing,
+.using-platforms,
+.development,
+.use-of-methodologies {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 270px;
+    height: 260px;
+}
+
+.using-platforms {
+    width: 270px;
+    height: 320px;
+    margin-bottom: 5%;
+}
+.designing p,
+.using-platforms p,
+.development p,
+.use-of-methodologies p {
+    font-size: 14px;
+    line-height: 18px;
+}
+.technology img{
+    width:90px;
+    height: 90px;
+}
+.technology h2{
+    width: 80%;
+    font-size: 26px;
+}
+.expertize {
+    margin-top: 20px;
+}
+
+.left-expertise-list,
+.right-expertise-list {
+    margin: 15px auto 0% auto;
+    width: 320px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.invite-text{
+font-size: 16px;
+width: 80%;
+}
+.left-expertise-list,.right-expertise-list{
+    margin-left: 3%;
+}
+.cases p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.financial-analytics-img,
+.crm-img,
+.cryptocurrency-exchange-img,
+.business-card-img,
+.crypto-betting-img {
+    width: 320px;
+    height: 190px;
+    margin-top: 70px;
+    margin-left: 0;
+}
+
+.crm-img,
+.business-card-img {
+    margin-right: 1%;
+    
+}
+
+.financial-analytics-img,
+.cryptocurrency-exchange-img,
+.crypto-betting-img{
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.financial-analytics-text,
+.cryptocurrency-exchange-text,
+.crypto-betting-text {
+    margin-left: 10px;
+    width: 330px;
+    margin-top: 38px;
+    font-size: 16px;
+}
+
+.crm-text,
+.business-card-text {
+margin-left: 2%;
+    margin-right: 2%;
+    width: 330px;
+    margin-top: 38px;
+    
+}
+
+.cryptocurrency-exchange-text {
+    margin-top: 35px;
+}
+
+.crypto-betting-text {
+    margin-top: 25px;
+}
+.approach {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.architecture,
+.design,
+.audit,
+.optimization {
+    width: 275px;
+    height: 240px;
+    margin: 10px;
+}
+
+.need-team {
+    background: url("img/teem/ellipse4.png") 0% 90%/50% no-repeat;
+
+}
+.discuss{
+    margin-bottom: 25px;
+}
+.light-ellipse {
+    order:1;
+    background:
+        url("img/teem/animation.png") 50% -40%/70% no-repeat, url("img/teem/light.png") 47% 4%/60% no-repeat;
+padding-bottom: 20px;
+    }
+.top-ligt-ellipse{
+    width:80%;
+}
+.learn {
+    top: 28%;
+    left: 11%;
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+}
+
+.consultation {
+    top: 35%;
+    font-size: 28px;
+    line-height: 33px;
+    width: 90%;
+    left: 6%;
+}
+
+.form{
+    order:2;
+    width:70%
+}
+.form-input {
+    width: 40%;
+}
+
+.form-button {
+    margin-top: 0;
+    margin-right: 2%;
+    top: -35px;
+}
+
+.code {
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 0px;
+        margin-right: 5px;
+        margin-bottom: 0;
+}
+
+ .footer-nav-bar,
+ .privacy-policy {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    margin-right: 1%;
+ }
+ .privacy-policy{
+    width: 30%;
+}
+
+ .privacy-policy a{
+    font-size: 14px;
+ }
+
+  .privacy-policy li {
+      margin-bottom: 10px;
+      display: block;
+      text-align: left;
+  }
+
+  .privacy-policy li:nth-child(2),
+  .privacy-policy li:nth-child(1) {
+      margin-right: 0%;
+  }
+
+ .footer-nav-bar {
+     margin: 0px 3% 27px auto;
+ }
+  .footer-nav-bar a {
+      font-size: 16px;
+      line-height: 18px;
+  }
+  .footer-nav-bar li{
+    margin-top: 25px;
+  }
+
+ .footer-logo {
+     order: 2;
+     margin: 0;
+     position: relative;
+     left: 7%;
+     bottom:110px;
+ }
+  .logo {
+      width: 50px;
+      height: 45px;
+  }
+
+ .privacy-policy ul {
+     order: 1;
+ }
+.top-form {
+    border-radius: 30px;
+    height: 84%;
+    left: 0%;
+    margin: 0 auto;
+    width: 58%;
+    background: #1C1C1C url("img/top-form/top-form-ellipse.png") 0 0/ 105% no-repeat;
+}
+.top-form h2{
+font-size: 22px;
+line-height: 25px;
+margin-bottom: 20px;
+}
+.top-form h2:after{
+    left: -160px;
+}
+.top-form-input-textarea{
+    min-height: 50px;
+    padding: 15px;
+    font-size: 14px;
+}
+#top-form-name,#top-form-email, #top-form-phone, #top-form-company{
+    height: 28px;
+    margin: 0px 0px 10px 0px;
+    padding-left: 15px;
+    width: 43%;
+    font-size: 14px;
+}
+ .top-file-item {
+     top: -100px;
+     left: 88%;
+ }
+ .top-protect{
+    font-size: 14px;
+        line-height: 18px;
+        width: 85%;
+        margin-bottom: 0px;
+        margin-top: 5px;
+ }
+ .top-form-button{
+    top:-28px;
+    
+ }
+.arrow span{
+    width: 20px;
+        height: 20px;
+}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -2104,7 +2450,6 @@ width: 380px;
 
     .need-team h2 {
         margin-top: 40px;
-
         font-size: 24px;
         line-height: 29px;
     }
@@ -2128,17 +2473,32 @@ width: 380px;
         line-height: 38px;
     }
 
-    .form {
-        order: 2;
-        width: 100%;
-        margin: 7px auto;
-    }
-
-    .form-body {
-        margin: 0 auto;
-        width: 90%;
-        box-sizing: border-box;
-    }
+        .form {
+            order: 2;
+            width: 100%;
+            margin: 7px auto;
+        }
+    
+        .form-body {
+            margin: 0 auto;
+            width: 90%;
+            box-sizing: border-box;
+        }
+    
+        .top-form-body {
+            height: 100%;
+    
+        }
+    
+        .top-form {
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            transform: translate(0, 0);
+            padding: 0;
+            background: #1C1C1C url("img/img-mobile/ellipse-top.png") 0 0/ 100% no-repeat;   
+        }
 
     .need-team {
         background: none;
@@ -2152,21 +2512,6 @@ width: 380px;
 
     }
 
-    .top-form-body {
-        height: 100%;
-
-    }
-
-    .top-form {
-        border-radius: 0;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        transform: translate(0, 0);
-        padding: 0;
-        background: #1C1C1C url("img/img-mobile/ellipse-top.png") 0 0/ 100% no-repeat;
-
-    }
 
     .close-icon {
         z-index: 999;
