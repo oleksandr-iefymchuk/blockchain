@@ -1577,7 +1577,7 @@ color: #ffffff;
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     body._lock {
             overflow: hidden;
         }
@@ -2094,7 +2094,7 @@ text-align: left;
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) and (min-width: 601px) {
     .header-navbar {
             width: 95%;
         }
