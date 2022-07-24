@@ -7,12 +7,12 @@ body {
     background: rgba(0, 0, 0, 0.9);
     font-family: 'Russo One', sans-serif;
     color: #ffffff;
-    
-   
 }
+
 body._lock {
     overflow: hidden;
 }
+
 canvas {
     position:absolute;
     left: 0;
@@ -28,73 +28,19 @@ canvas {
 }
 
 header {
-       background:  url("img/ellipse2.png") 0% 30%/ 150% no-repeat,
+    background: url("img/ellipse2.png") 0% 30%/ 150% no-repeat,
         url("img/bg-lines.png") 0% 42%/ 100% no-repeat,
         url("img/ellipse.png") 0% 10%/ 90% no-repeat;
     height: 470px;
     padding-bottom: 13%;
 }
 
-.main-cube{
-top:30%;    
-width: 44%;
-position: absolute;
-left: 56%;
-}
-.cube-top-left {
-    width: 5%;
-    position:absolute;
-    top:26%;
-    left:62.7%;
-    animation: move-cube 1.4s ease infinite alternate both;
-   
-}
-.cube-top-right {
-    width: 5%;
-    position: absolute;
-    top: 38%;
-    left: 89.8%;
-    animation: move-cube 1.5s ease infinite alternate both;
-}
-
-.cube-middle-left {
-    width: 5%;
-    position: absolute;
-    top: 55%;
-    left: 56.5%;
-    animation: move-cube 1.5s ease infinite alternate both;
-}
-.cube-middle-right{
-    width: 5%;
-    position: absolute;
-    top: 69%;
-    left: 90.5%;
-    animation: move-cube 1.4s ease infinite alternate both;
-}
-.cube-bottom {
-    width: 5%;
-    position: absolute;
-    top: 78.3%;
-    left: 73.6%;
-    animation: move-cube 1.5s ease infinite alternate both;
-}
-@keyframes move-cube {
-    0% {
-        padding-top: 2%;
-
-    }
-
-    100% {
-    }
-}
-
-.top-logo{
+.top-logo {
     text-align: center;
     position: relative;
-        top: 3%;
-        right: 2%;
+    top: 3%;
+    right: 2%;
 }
-
 
 .header-navbar {
     position: relative;
@@ -106,26 +52,31 @@ left: 56%;
     top: -5%;
 }
 
-#nav-technology, #nav-cases, #nav-approach,#nav-team {
+#nav-technology,
+#nav-cases,
+#nav-approach,
+#nav-team {
     position: absolute;
     margin: 0% 3% 0% 3%;
     display: inline-block;
-        text-transform: uppercase;
-        vertical-align: middle;
+    text-transform: uppercase;
+    vertical-align: middle;
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
     line-height: 24px;
     position: relative;
-    
 }
-#nav-technology{
-margin-left: 8%;
+
+#nav-technology {
+    margin-left: 8%;
 }
-#nav-cases{
+
+#nav-cases {
     margin-right: 7%;
 }
-#nav-approach{
+
+#nav-approach {
     margin-left: 10%;
 }
 
@@ -153,9 +104,82 @@ margin-left: 8%;
     width: 100%;
 }
 
+.header-introduction {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.introduction-text {
+    width: 55%;
+}
+
+.introduction-cube {
+    width: 45%;
+    position: relative;
+}
+
+.main-cube {
+    top:-7%;
+    width: 100%;
+    position: absolute;
+    left: 1%;
+}
+
+.cube-top-left {
+    width: 10%;
+    position: absolute;
+    top: -7%;
+    left: 16.9%;
+    animation: move-cube 1.4s ease infinite alternate both;
+
+}
+
+.cube-top-right {
+    width: 10%;
+    position: absolute;
+    top: 11%;
+    left: 78.6%;
+    animation: move-cube 1.5s ease infinite alternate both;
+}
+
+.cube-middle-left {
+    width: 10%;
+    position: absolute;
+    top: 41%;
+    left: 2.8%;
+    animation: move-cube 1.5s ease infinite alternate both;
+}
+
+.cube-middle-right {
+    width: 10%;
+    position: absolute;
+    top: 66%;
+    left: 80.5%;
+    animation: move-cube 1.4s ease infinite alternate both;
+}
+
+.cube-bottom {
+    width: 10%;
+    position: absolute;
+    top: 82%;
+    left: 41.6%;
+    animation: move-cube 1.5s ease infinite alternate both;
+}
+
+@keyframes move-cube {
+    0% {
+        padding-top: 3%;
+
+    }
+
+    100% {}
+}
+
+
 .header-subtitle {
     width: 611px;
-    margin-left: 7%;
+    margin-left:13%;
 }
 
 .header-subtitle h1 {
@@ -1305,7 +1329,7 @@ footer{
 }
 .privacy-policy{
     margin-right: 3%;
-    text-align: right;
+    text-align: center;
     width: 40%;
 }
 .privacy-policy li{
@@ -1602,24 +1626,33 @@ color: #ffffff;
         left: 10%;
 }
 .cube-top-left {
-    width: 6%;
-    top: 32%;
-    left: 66.7%;
+    width: 13%;
+    top: 6%;
+    left: 33%;
 }
 .cube-top-right, .cube-middle-right{
     display:none;
 }
 .cube-middle-left {
-    width: 6%;
-    top: 55.3%;
-    left: 56.9%;
+    width: 13%;
+    top: 57%;
+    left: 13%;
 }
 
 .cube-bottom {
-    width: 6%;
-    top: 76.4%;
-    left: 84%;
+    width: 13%;
+    top: 101%;
+    left: 67%;
 }
+@keyframes move-cube {
+    0% {
+        padding-top: 5%;
+
+    }
+
+    100% {}
+}
+
 .designing,.using-platforms, .development,.use-of-methodologies{
     margin-left:3%;
 margin-right: 3%;
@@ -1634,6 +1667,7 @@ width: 290px;
 .left-expertise-list, .right-expertise-list{
     margin: 20px auto 0 auto;
         width: 320px;
+        line-height: 39px;
 }
 
 .financial-analytics-img,
@@ -1743,11 +1777,11 @@ width: 380px;
         #nav-cases,
         #nav-approach,
         #nav-team{
-            font-size: 18px;
+            font-size: 16px;
             margin: 0% 2% 0% 2%;
         }
         #nav-technology {
-            margin-left: 5%;
+            margin-left: 10%;
         }
     
         #nav-cases {
@@ -1761,7 +1795,46 @@ width: 380px;
                 margin-right: 1%;
                 }
 .top-logo {
-    right: 5%;
+    right: 1%;
+}
+
+.introduction-text{
+    margin-left: 2%;
+}
+ .main-cube {
+     top: 0;
+     width: 100%;
+     left: 0%;
+ }
+
+.cube-top-left {
+    width: 9%;
+    top: 5%;
+    left: 16.6%;
+}
+
+.cube-top-right {
+    width: 9%;
+    top: 16%;
+    left: 78%;
+}
+
+.cube-middle-left {
+    width: 9%;
+    top: 39%;
+    left: 2.5%;
+}
+
+.cube-middle-right {
+    width: 9%;
+    top: 60%;
+    left: 80%;
+}
+
+.cube-bottom {
+    width: 9%;
+    top: 73%;
+    left: 41%;
 }
 
 .header-scroll {
@@ -1774,19 +1847,22 @@ width: 380px;
 .header-subtitle h1 {
     font-size: 24px;
 }
-.header-subtitle p{
-    top: -20px;
+.header-subtitle h1::after{
+    top: -17px;
 }
+
 .header-subtitle p{
 font-size: 16px;
 line-height: 16px;
 width: 330px;
+top: -15px;
 }
 
 .header-button,
 .form-button,
 .top-form-button, .cases-button-left,
 .cases-button-right{
+    font-size: 16px;
     width: 160px;
         height: 40px;
 }
@@ -1796,8 +1872,9 @@ width: 330px;
     width: 95%;
 }
 .telegram{
+    font-size: 16px;
     width: 200px;
-        height: 45px;
+        height: 40px;
 }
 
 .header-button{
@@ -1842,8 +1919,8 @@ width: 330px;
 .right-expertise-list {
     margin: 15px auto 0% auto;
     width: 320px;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .invite-text{
@@ -1853,6 +1930,11 @@ width: 80%;
 .left-expertise-list,.right-expertise-list{
     margin-left: 3%;
 }
+.expertise-list p {
+    padding-top: 5px;
+    
+}
+
 .cases p {
     font-size: 14px;
     line-height: 20px;
@@ -1959,6 +2041,7 @@ padding-bottom: 20px;
 }
 .form-input {
     width: 40%;
+
 }
 
 .form-button {
@@ -2028,48 +2111,63 @@ padding-bottom: 20px;
      order: 1;
  }
 .top-form {
+    padding-top: 10px;
     border-radius: 30px;
-    height: 84%;
+    height:250px;
     left: 0%;
     margin: 0 auto;
     width: 58%;
     background: #1C1C1C url("img/top-form/top-form-ellipse.png") 0 0/ 105% no-repeat;
 }
 .top-form h2{
-font-size: 22px;
-line-height: 25px;
-margin-bottom: 20px;
+font-size: 20px;
+line-height: 20px;
+margin-bottom: 15px;
 }
 .top-form h2:after{
-    left: -160px;
+    left: -145px;
+     top: 10px;  
 }
 .top-form-input-textarea{
-    min-height: 50px;
-    padding: 15px;
+    min-height: 30px;
+    padding: 10px;
     font-size: 14px;
 }
 #top-form-name,#top-form-email, #top-form-phone, #top-form-company{
-    height: 28px;
-    margin: 0px 0px 10px 0px;
+    height: 20px;
+    margin: 0px 0px 5px 0px;
     padding-left: 15px;
     width: 43%;
     font-size: 14px;
 }
  .top-file-item {
-     top: -100px;
-     left: 88%;
+     top: -80px;
+     left: 89%;
  }
+.top-file-item img {
+width: 30px;
+}
  .top-protect{
-    font-size: 14px;
-        line-height: 18px;
+    font-size: 12px;
+        line-height: 14px;
         width: 85%;
         margin-bottom: 0px;
-        margin-top: 5px;
+        margin-top: 0px;
  }
  .top-form-button{
     top:-28px;
     
  }
+
+ .close-icon {
+     width: 30px;
+     height: 25px;
+     position: fixed;
+     top: 10px;
+     right: 4%;
+     z-index: 8;
+ }
+
 .arrow span{
     width: 20px;
         height: 20px;
@@ -2112,7 +2210,7 @@ margin-bottom: 20px;
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(28, 28, 28, 0.98) url("img/img-mobile/ellipse-top-burger.png") 0% 20%/ 100% no-repeat;
+        background: rgba(28, 28, 28, 0.98) url("img/img-mobile/ellipse-top-burger.png") 0% 20%/ 150% no-repeat;
         z-index: 4;
         overflow: auto;
         right: -100%;
@@ -2251,14 +2349,20 @@ margin-bottom: 20px;
     .header-scroll {
         display: none;
     }
+.header-introduction{
+    flex-wrap: wrap;
+}
+        .introduction-text {
+            width: 100%;
+        }
 
-    .img-wrapp {
-        position: absolute;
+        .introduction-cube {
+        position: relative;
         width: 70%;
-        height: 80%;
+        height: 300px;
         overflow: hidden;
-        top: 70%;
-        left: 30%;
+        top: 0%;
+        left: 15%;
     }
 
     .main-cube {
@@ -2269,21 +2373,21 @@ margin-bottom: 20px;
     }
 
     .cube-top-left {
-        width: 9.5%;
-        top: 72%;
-        left: 54.2%;
+        width: 13%;
+        top: 6%;
+        left: 35%;
     }
 
     .cube-middle-left {
-        width: 9.5%;
-        top: 85.8%;
-        left: 39.4%;
+        width: 13%;
+        top: 37%;
+        left: 14%;
     }
 
     .cube-bottom {
-        width: 9.5%;
-        top: 99%;
-        left: 80%;
+        width: 14%;
+        top: 66%;
+        left: 71.3%;
     }
 
     .cube-top-right,
